@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<data>
+    <location>
+        <id>1</id>
+        <name>Hotel Imperial</name>
+        
+        <gpsX>48.200821</gpsX>
+        <gpsY>16.372926</gpsY>
+
+        <wifi>
+            <AP>
+                <address>58:B6:33:21:E5:48</address>
+                <quality>40</quality>
+            </AP>
+            <AP>
+                <address>54:3D:37:34:36:88</address>
+                <quality>50</quality>
+            </AP>
+        </wifi>
+
+        <beacon>
+            <uuid>e2114c24954b0c960cff8c001d18e040</uuid>
+            <rss>-40</rss>
+        </beacon>
+
+        <LED></LED>
+        <radius>30</radius>
+
+
+        <state>
+            <id>a</id>
+            <activated>false</activated>
+            <audio>
+                <filename>audio1a.mp3</filename>
+            </audio>
+            <unlock>
+                <location>
+                    <id>2</id>
+                </location>
+                <location>
+                    <id>3</id>
+                </location>
+                <location>
+                    <id>4</id>
+                </location>
+            </unlock>
+        </state>
+
+        <state>
+            <id>b</id>
+            <active>false</active>
+            <prereq>
+                <location>
+                    <id>4</id>
+                    <state>a</state>
+                </location>
+            </prereq>
+            <audio>
+                <filename>audio1b.mp3</filename>
+            </audio>
+            <unlock>
+                <location>
+                    <id>5</id>
+                    <state>a</state>
+                </location>
+            </unlock>
+        </state>
+    </location>
+
+    <location>
+        <id>2</id>
+        <name>Hotel Sacher / Cafe Mozart</name>
+        <gpsX>48.204226</gpsX>
+        <gpsY>16.369230</gpsY>
+        <wifi>
+            <AP>
+                <address>30:89:D3:5B:10:60</address>
+                <quality>60</quality>
+            </AP>
+            <AP>
+                <address>00:23:69:8F:54:36</address>
+                <quality>50</quality>
+            </AP>
+        </wifi>
+
+        <beacon>
+            <uuid>e2114c24924a0c960cff8c00aa33bd9f</uuid>
+            <rss>-40</rss>
+        </beacon>
+        
+        <LED></LED>
+        <radius>50</radius>
+        <state>
+            <id>a</id>
+            <active>false</active>
+            <audio>
+                <filename>audio2a.mp3</filename>
+            </audio>
+        </state>
+    </location>
+
+    <location>
+        <id>3</id>
+        <name>Oper / Opernbrunnen</name>
+        <gpsX>48.202854</gpsX>
+        <gpsY>16.369616</gpsY>
+        <wifi>
+            <AP>
+                <address>9C:C7:A6:EB:73:30</address>
+                <quality>40</quality>
+            </AP>
+            <AP>
+                <address>78:54:2E:2E:CD:12</address>
+                <quality>50</quality>
+            </AP>
+        </wifi>
+        <LED></LED>
+        <radius>30</radius>
+        <state>
+            <id>a</id>
+            <active>false</active>
+            <audio>
+                <filename>audio3a.mp3</filename>
+            </audio>
+        </state>
+    </location>
+
+    <location>
+        <id>4</id>
+        <name>Resselpark Statue</name>
+        <gpsX>48.199394</gpsX>
+        <gpsY>16.370150</gpsY>
+        <wifi>
+            <AP>
+                <address>D4:D1:84:73:D4:82</address>
+                <quality>100</quality>
+            </AP>
+            <AP>
+                <address>C4:EA:1D:A5:62:0B</address>
+                <quality>100</quality>
+            </AP>
+        </wifi>
+        <LED></LED>
+        <radius>30</radius>
+        <state>
+            <id>a</id>
+            <active>false</active>
+            <audio>
+                <filename>audio4a.mp3</filename>
+            </audio>
+            <unlock>   
+                <location>
+                    <id>1</id>
+                    <state>b</state>
+                </location>             
+            </unlock>
+        </state>
+    </location>
+<!--
+    <location>
+        <id>5</id>
+        <name>Ecke Paniglgasse / TU</name>
+        <gpsX>48.197798</gpsX>
+        <gpsY>16.370370</gpsY>
+        <wifi>
+            <AP>
+                <address>D4:D1:84:73:D4:82</address>
+                <quality>100</quality>
+            </AP>
+            <AP>
+                <address>C4:EA:1D:A5:62:0B</address>
+                <quality>100</quality>
+            </AP>
+        </wifi>
+        <LED></LED>
+        <radius>30</radius>
+        
+        <state>
+            <id>a</id>
+            <active>true</active>
+            <radius>30</radius>
+            <audio>
+                <filename>audio5a.mp3</filename>
+            </audio>
+        </state>
+        <state>
+            <id>b</id>
+            <active>false</active>
+            <radius>5</radius>
+            <audio>
+                <filename>audio5b.mp3</filename>
+            </audio>
+        </state>
+    </location>
+
+    <location>
+        <id>6</id>
+        <name>Folge dem Untergrund</name>
+        <gpsX>48.197798</gpsX>
+        <gpsY>16.370370</gpsY>
+        <LED></LED>
+        <radius>10</radius>
+        <state>
+            <id>chase</id>
+            <active>true</active>
+            <radius>5</radius>
+            <audio>
+                <filename>audio6a.mp3</filename>
+            </audio>
+            <gpsX>48.197798</gpsX>
+            <gpsY>16.370370</gpsY>
+            <gpsX>48.197807</gpsX>
+            <gpsY>16.371368</gpsY>
+            <gpsX>48.197364</gpsX>
+            <gpsY>16.371955</gpsY>
+            <gpsX>48.197786</gpsX>
+            <gpsY>16.373115</gpsY>
+            <gpsX>48.198201</gpsX>
+            <gpsY>16.374310</gpsY>
+            <gpsX>48.198437</gpsX>
+            <gpsY>16.375517</gpsY>
+            <gpsX>48.198154</gpsX>
+            <gpsY>16.376276</gpsY>
+            
+        </state>
+        <state>
+            <id>a</id>
+            <active>false</active>
+            <radius>10</radius>
+            <gpsX>48.197807</gpsX>
+            <gpsY>16.371368</gpsY>
+            <audio>
+                <filename>audio6a.mp3</filename>
+            </audio>
+            <unlock>   
+                <location>
+                    <id>6</id>
+                    <state>b</state>
+                </location>             
+            </unlock>
+        </state>
+        <state>
+            <id>b</id>
+            <active>false</active>
+            <radius>5</radius>
+            <gpsX>48.198201</gpsX>
+            <gpsY>16.374310</gpsY>
+            <audio>
+                <filename>audio6b.mp3</filename>
+            </audio>
+            <unlock>   
+                <location>
+                    <id>5</id>
+                    <state>b</state>
+                </location>             
+            </unlock>
+        </state>
+    </location>
+
+    <location>
+        <id>7</id>
+        <name>Ecke Paniglgasse / TU</name>
+        <gpsX>48.198154</gpsX>
+        <gpsY>16.376276</gpsY>
+        <timer>12h</timer>
+        <radius>10</radius>
+        <LED></LED>
+        
+        <state>
+            <id>a</id>
+            <active>true</active>
+            <radius>30</radius>
+            <audio>
+                <filename>audio7a.mp3</filename>
+            </audio>
+            <unlock>   
+                <location>
+                    <id>5</id>
+                    <state>b</state>
+                </location>             
+            </unlock>
+        </state>
+    </location>
+-->
+</data>
