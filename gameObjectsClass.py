@@ -20,8 +20,10 @@ class GameData:
 				wifiAPs.append({'address': AP.find('address').text,'quality': int(AP.find('quality').text)})
 
 			beacons = []
-			for beacon in location.findAll('beacon'):
+			for beacon in location.find('beacon'):
 				beacons.append({'uuid': beacon.find('uuid').text,'rssi': int(beacon.find('rssi').text)})
+				print "UUID: ", beacon.find('uuid').text
+				print "Rssi: ", beacon.find('rssi').text
 			
 
 			radius = int(location.find('radius').text)        
