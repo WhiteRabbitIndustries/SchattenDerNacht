@@ -19,8 +19,10 @@
         </wifi>
 
         <beacon>
-            <uuid>e2114c24954b0c960cff8c001d18e040</uuid>
-            <rss>-40</rss>
+            <AP>
+                <uuid>e2114c24954b0c960cff8c001d18e040</uuid>
+                <rss>-40</rss>
+            </AP>           
         </beacon>
 
         <LED></LED>
@@ -84,8 +86,10 @@
         </wifi>
 
         <beacon>
-            <uuid>e2114c24924a0c960cff8c00aa33bd9f</uuid>
-            <rss>-40</rss>
+            <AP>
+                <uuid>e2114c24924a0c960cff8c00aa33bd9f</uuid>
+                <rss>-40</rss>
+            </AP>
         </beacon>
         
         <LED></LED>
