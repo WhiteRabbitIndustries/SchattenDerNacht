@@ -20,7 +20,7 @@ class GameData:
 				wifiAPs.append({'address': AP.find('address').text,'quality': int(AP.find('quality').text)})
 
 			for beacon in location.findall('beacon'):
-				if(beacon ! = None):
+				if(beacon is not None):
 					uuid = beacon.find('uuid').text
 					rssi = int(beacon.find('rssi').text)
 					print "UUID: ", uuid
