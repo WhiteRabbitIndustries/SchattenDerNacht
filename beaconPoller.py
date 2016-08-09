@@ -33,14 +33,20 @@ class beaconPoller(threading.Thread):
     blescan.hci_enable_le_scan(self.sock)
 
 
+  def stop(self):
+    print "Beacons STOPPED"
+    self.running = False
+
   def run(self):
     try:
       while self.running:
-      
-        self.beaconsList = blescan.getBeacons(self.sock, 10)
 
-        #sort_cells(parsed_beacons)
-        #print_cells(self.parsed_beacons)
+        if self.running is False:
+          print "Beacons stopped"
+          return
+        
+        self.beaconsList = blescan.getBeacons(self.sock, 10)
+        print "Beacons List: ", self.beaconsList  
         time.sleep(2) # tune this, you might not get values that quickly
 
 
@@ -51,11 +57,14 @@ class beaconPoller(threading.Thread):
   def inBeaconRange(self, uuid, rssi):
     try:
       # scan through 
-      print uuid 
+  
+      print "Traget UUID: ", uuid 
   
       for beacon in self.beaconsList:
-        
+      
         if beacon['uuid'] == uuid and beacon['rssi'] > rssi:
+          print "UUID: ", beacon['uuid'] 
+          print "RSSI: ", beacon['rssi'] 
           return True
       
       return False

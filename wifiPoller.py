@@ -28,6 +28,11 @@ class wifiPoller(threading.Thread):
   #             cell_properties.append(cell[column])
   #         table.append(cell_properties)
   #     print_table(table)
+  #     
+  
+  def stop(self):
+    print "Wifi STOPPED"
+    self.running = False
 
   def run(self):
     try:

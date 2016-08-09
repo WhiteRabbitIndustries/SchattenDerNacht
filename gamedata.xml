@@ -19,7 +19,7 @@
         </wifi>
 
         <beacon>
-             <uuid>e2114c24954b0c960cff8c001d18e040</uuid>
+             <uuid>e2114c24914a0c960cff8c00804cc15c</uuid>
              <rssi>-40</rssi>          
         </beacon>
 
@@ -84,7 +84,7 @@
         </wifi>
 
         <beacon>
-            <uuid>e2114c24924a0c960cff8c00aa33bd9f</uuid>
+            <uuid>e2114c248e4a0c960cff8c00e7952d89</uuid>
             <rssi>-40</rssi>
         </beacon>
         

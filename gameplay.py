@@ -43,6 +43,7 @@ beaconp = beaconPoller()
 try: 
   gpsp.start() #start watching gps values
   wifip.start()
+  beaconp.start()
 
   while True:
     # get gps values
@@ -161,11 +162,13 @@ while pygame.mixer.music.get_busy() == True:
 
 except(KeyboardInterrupt, SystemExit):
   print "\nKilling Threads.."
+  beaconp.stop()
+  beaconp.join()
   gpsp.running = False 
   gpsp.join()
-  wifip.running = False 
+  wifip.stop() 
   wifip.join()
-
+  
 print "Done.\nExiting."
 
 #game state machine
