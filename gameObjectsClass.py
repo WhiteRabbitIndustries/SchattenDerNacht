@@ -20,14 +20,14 @@ class GameData:
 				wifiAPs.append({'address': AP.find('address').text,'quality': int(AP.find('quality').text)})
 
 			beacons = []
-			for AP in location.find('beacon').findall('AP'):
+			for beacon in location.find('beacon'):
 				print "UUID: ", AP.find('uuid').text
 				print "Rssi: ", AP.find('rssi').text
 				beacons.append({'uuid': AP.find('uuid').text,'rssi': int(AP.find('rssi').text)})
 				
 
 			radius = int(location.find('radius').text)        
-			self.locationList.append(GameLocation(id,name,coord,wifiAPs,radius,location))
+			self.locationList.append(GameLocation(id,name,coord,wifiAPs,radius,location,beacons))
 			self.locationCount+=1
 
 		#self.currentLocation = 1
@@ -38,7 +38,7 @@ class GameData:
 		pass
 
 class GameLocation:
-	def __init__(self,id,name,coord,wifiAPs,radius,location, beaconsbeacons):
+	def __init__(self,id,name,coord,wifiAPs,radius,location, beacons):
 		self.id = id
 		self.name = name
 		self.coord = coord
