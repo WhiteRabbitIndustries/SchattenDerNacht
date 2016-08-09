@@ -21,7 +21,7 @@
         <beacon>
             <AP>
                 <uuid>e2114c24954b0c960cff8c001d18e040</uuid>
-                <rss>-40</rss>
+                <rssi>-40</rssi>
             </AP>           
         </beacon>
 
@@ -88,7 +88,7 @@
         <beacon>
             <AP>
                 <uuid>e2114c24924a0c960cff8c00aa33bd9f</uuid>
-                <rss>-40</rss>
+                <rssi>-40</rssi>
             </AP>
         </beacon>
         
